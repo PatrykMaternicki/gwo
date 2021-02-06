@@ -1,0 +1,6 @@
+export default {
+  'ADD_ORDER': 'ADD_ORDER',
+  'CLEAR_STATUS': 'CLEAR_STATUS',
+  'CLEAR_ORDER': 'CLEAR_ORDER',
+  'SET_STATUS': 'SET_STATUS'
+}

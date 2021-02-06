@@ -1,0 +1,19 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": "off",
+    "import/first": "off",
+    " no-unused-vars": "off",
+    "no-unused-expressions": "off"
+  },
+  "parser": "babel-eslint"
+}
