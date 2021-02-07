@@ -16,9 +16,10 @@ const getNextPage = (item) => ({
   type: TYPES.GET_NEXT_PAGE, item
 })
 
+
 export default {
   add,
   clear,
   setPage,
-  getNextPage
+  getNextPage,
 }

@@ -10,14 +10,20 @@ const setStatus = item => ({
 
 const clearStatus = item => ({
   type: TYPES.CLEAR_STATUS, item
-})
+});
 
 const clearOrder = item => ({
   type: TYPES.CLEAR_ORDER, item
-})
+});
+
+const removeOrder = (item) => ({
+  type: TYPES.REMOVE_ORDER, item
+});
+
 export default {
   addOrder,
   setStatus,
   clearStatus,
-  clearOrder
+  clearOrder,
+  removeOrder
 }

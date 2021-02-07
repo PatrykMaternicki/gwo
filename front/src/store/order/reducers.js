@@ -23,6 +23,11 @@ const orderReducers = (state = INIT_STATE, action) =>
         ...state, list: []
       }
     }
+    case TYPES.REMOVE_ORDER: {
+      return {
+        ...state, list: state.list.filter((item, index) => index !== action.item)
+      }
+    }
     case TYPES.CLEAR_STATUS: {
       return {
         ...state, status: null
