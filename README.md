@@ -38,6 +38,11 @@ Dokumentacja w formacie OpenAPI 3 dostępna jest po uruchomieniu mock serwera
  i przejściu na adres: [localhost:3001/docs](http://localhost:3001/docs).
 
 ## Uruchamianie środowiska deweloperskiego
+Wejść do folderu front odpalić następujące koemendy:
+```js
+ npm install
+ npm run start
+```
 Wymagane jest posiadanie Node.js (zaleca się dodatkowo Yarn). Projekt wymaga
  instalacji i uruchomienia API mock serwera:
 ```bash
