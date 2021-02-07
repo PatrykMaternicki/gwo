@@ -5,10 +5,20 @@ const add = item => ({
 });
 
 const clear = () => ({
-  type: TYPES.ADD
+  type: TYPES.CLEAR
 });
+
+const setPage = (item) => ({
+  type: TYPES.SET_PAGE, item
+})
+
+const getNextPage = (item) => ({
+  type: TYPES.GET_NEXT_PAGE, item
+})
 
 export default {
   add,
-  clear
+  clear,
+  setPage,
+  getNextPage
 }

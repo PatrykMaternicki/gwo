@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import Container from 'react-bootstrap/Container'
 import Navbar from './components/Navbar'
 import Snackbar from './components/Snackbar'
-import { getAllBooks } from './store/books/operations'
+import { getBooks } from './store/books/operations'
 import Actions from './store/order/actions'
 
 import {
@@ -14,8 +14,8 @@ import {
   Route
 } from "react-router-dom";
 
-const App = ({basketStock, status, getAllBooks, clearStatus}) => {
-  useEffect(() => { getAllBooks() }, [])
+const App = ({basketStock, status, getBooks, clearStatus}) => {
+  useEffect(() => { getBooks() }, [])
   const clearAlert = () => clearStatus()
   return (
   <div>
@@ -39,7 +39,7 @@ const mapStateToProps = state => ({
 
 
 const mapDispatchToProps = dispatch => ({
-  getAllBooks: () => dispatch(getAllBooks()),
+  getBooks: () => dispatch(getBooks()),
   clearStatus: () => dispatch(Actions.clearStatus())
 })
 

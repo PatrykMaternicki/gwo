@@ -4,8 +4,8 @@ import restConfig from '../models/restConfig'
 import { restUrl } from '../dictionaries/rest'
 
 export default class ApiClient {
-  static async getBook() {
-    const response = await get(restUrl.book, restConfig('GET'))
+  static async getBook(page = 1) {
+    const response = await get(restUrl.book(page), restConfig('GET'))
     return response
   }
 

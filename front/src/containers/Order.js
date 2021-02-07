@@ -1,4 +1,3 @@
-
 import { setOrder } from '../store/order/operations'
 import Form from '../components/Form'
 import Row from 'react-bootstrap/Row'
